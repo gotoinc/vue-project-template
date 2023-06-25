@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "global": "^4.4.0",
     "pinia": "^2.1.4",
+    "postcss": "^8.4.24",
+    "ts-node": "^10.9.1",
     "vue": "^3.2.47",
     "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss-nesting": "^11.3.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vue-tsc": "^1.4.2"
