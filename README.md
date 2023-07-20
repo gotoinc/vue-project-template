@@ -16,4 +16,14 @@ $ yarn dev
 $ yarn build
 ```
 
+## Prepare local environment
+
+```bash
+$ yarn setup-husky
+```
+
+```bash
+$ git config core.hooksPath .husky
+```
+
 

@@ -7,7 +7,18 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.vue src --fix"
+    "setup-husky": "git config --unset-all core.hooksPath && npx husky install",
+    "lint:fix": "eslint . --ext .ts --ext .vue --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,ts}": [
+      "yarn lint:fix"
+    ]
   },
   "dependencies": {
     "global": "^4.4.0",
@@ -29,6 +40,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.15.1",
+    "husky": "^8.0.3",
     "postcss-nesting": "^11.3.0",
     "prettier": "^2.8.8",
     "typescript": "^5.0.2",
