@@ -8,6 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "setup-husky": "git config --unset-all core.hooksPath && npx husky install",
+    "lint": "eslint . --ext .ts --ext .vue",
     "lint:fix": "eslint . --ext .ts --ext .vue --fix"
   },
   "husky": {
